@@ -29,11 +29,6 @@ h3 {
 #draw {
     background-image: url('bgs/draw.jpg');
     background-size: cover;
-    width: 26vw;
-    height: 20vh;
-    text-align: center;
-    border-radius: 3%;
-    padding: 15px;
 }
 
 .game-photos {

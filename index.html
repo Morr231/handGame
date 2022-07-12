@@ -20,7 +20,6 @@
             >
                 Toggle Video
             </button>
-            <!-- <div id="updatenote" class="updatenote mt10">loading model ..</div> -->
         </div>
         <video
             class="videobox canvasbox"
@@ -30,10 +29,26 @@
         ></video>
 
         <canvas id="canvas" class="border canvasbox"></canvas>
-        <canvas id="result" width="500" height="500"></canvas>
+
+        <h2 class="game-header">Guess the logo</h2>
+
+        <div class="game-header__container">
+            <h3 class="game-header__company" id="company">Company name</h3>
+            <button id="next-button">Next</button>
+        </div>
+
+        <div class="game">
+            <canvas id="result" width="500" height="500"></canvas>
+            <div class="generator">
+                <button id="generator-button">Show</button>
+                <img src="" alt="" id="generator-img" />
+            </div>
+        </div>
 
         <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+
+        <script src="generator.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

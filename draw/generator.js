@@ -48,5 +48,6 @@ nextButton.addEventListener("click", () => {
     generatorButton.style.display = "block";
     nextButton.style.display = "none";
 
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     console.log(index);
 });

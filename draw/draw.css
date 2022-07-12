@@ -67,7 +67,8 @@ body {
 }
 
 #generator-button,
-#next-button {
+#next-button,
+#clear-button {
     border: none;
     width: 88px;
     height: 40px;
@@ -78,6 +79,10 @@ body {
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
+}
+
+#clear-button {
+    margin-right: 1rem;
 }
 
 #result {

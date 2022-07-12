@@ -6,7 +6,10 @@ const ctx = resultCanvas.getContext("2d");
 ctx.lineWidth = 4;
 
 const context = canvas.getContext("2d");
-let trackButton = document.getElementById("trackbutton");
+const trackButton = document.getElementById("trackbutton");
+
+const clearButton = document.getElementById("clear-button");
+
 let isVideo = false;
 let model = null;
 
@@ -74,4 +77,8 @@ function runDetection() {
 handTrack.load(modelParams).then((lmodel) => {
     model = lmodel;
     trackButton.disabled = false;
+});
+
+clearButton.addEventListener("click", () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 });

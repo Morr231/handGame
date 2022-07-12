@@ -8,9 +8,10 @@
             href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"
         />
         <link rel="stylesheet" href="../draw/draw.css" />
+        <link rel="stylesheet" href="./pong.css" />
     </head>
 
-    <body class="bx--body p20">
+    <body class="bx--body p20" style="overflow: hidden">
         <div class="mb10">
             <button
                 onclick="toggleVideo()"
@@ -28,10 +29,20 @@
             style="display: none"
         ></video>
 
+        <div class="timer" id="timer">Timer</div>
+
         <canvas id="canvas" class="border canvasbox"></canvas>
+
+        <button class="start-game" id="start-game">Start game</button>
+
+        <div class="platform" id="platform"></div>
+
+        <div class="ball" id="ball"></div>
+
+        <div class="end-game" id="end-game"></div>
 
         <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
-        <script src="../draw/draw.js"></script>
+        <script src="./pong.js"></script>
     </body>
 </html>

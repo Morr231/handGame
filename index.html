@@ -2,7 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Handy</title>
+        <title>
+            Handtrack.js : A library for prototyping realtime handtracking in
+            the browser.
+        </title>
         <link
             rel="stylesheet"
             href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"
@@ -11,44 +14,8 @@
     </head>
 
     <body class="bx--body p20">
-        <div class="mb10">
-            <button
-                onclick="toggleVideo()"
-                id="trackbutton"
-                class="bx--btn bx--btn--secondary"
-                type="button"
-            >
-                Toggle Video
-            </button>
-        </div>
-        <video
-            class="videobox canvasbox"
-            autoplay="autoplay"
-            id="myvideo"
-            style="display: none"
-        ></video>
-
-        <canvas id="canvas" class="border canvasbox"></canvas>
-
-        <h2 class="game-header">Guess the logo</h2>
-
-        <div class="game-header__container">
-            <h3 class="game-header__company" id="company">Company name</h3>
-            <button id="next-button">Next</button>
-        </div>
-
-        <div class="game">
-            <canvas id="result" width="500" height="500"></canvas>
-            <div class="generator">
-                <button id="generator-button">Show</button>
-                <img src="" alt="" id="generator-img" />
-            </div>
-        </div>
-
-        <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
-
-        <script src="generator.js"></script>
-        <script src="index.js"></script>
+        <a href="./draw/draw.html">Draw</a>
+        <a href="./doctor/doctor.html">Doctor</a>
+        <a href="./pong/pong.html">Pong</a>
     </body>
 </html>

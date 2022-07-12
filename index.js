@@ -7,7 +7,7 @@ ctx.lineWidth = 3;
 
 const context = canvas.getContext("2d");
 let trackButton = document.getElementById("trackbutton");
-let updateNote = document.getElementById("updatenote");
+// let updateNote = document.getElementById("updatenote");
 
 let isVideo = false;
 let model = null;
@@ -23,24 +23,24 @@ function startVideo() {
     handTrack.startVideo(video).then(function (status) {
         console.log("video started", status);
         if (status) {
-            updateNote.innerText = "Video started. Now tracking";
+            // updateNote.innerText = "Video started. Now tracking";
             isVideo = true;
             runDetection();
         } else {
-            updateNote.innerText = "Please enable video";
+            // updateNote.innerText = "Please enable video";
         }
     });
 }
 
 function toggleVideo() {
     if (!isVideo) {
-        updateNote.innerText = "Starting video";
+        // updateNote.innerText = "Starting video";
         startVideo();
     } else {
-        updateNote.innerText = "Stopping video";
+        // updateNote.innerText = "Stopping video";
         handTrack.stopVideo(video);
         isVideo = false;
-        updateNote.innerText = "Video stopped";
+        // updateNote.innerText = "Video stopped";
     }
 }
 
@@ -52,6 +52,8 @@ function runDetection() {
         // console.log("Predictions: ", predictions);
 
         predictions.forEach((el) => {
+            console.log(el);
+
             if (
                 el.label === "open" &&
                 px - el.bbox[0] < 50 &&
@@ -59,7 +61,11 @@ function runDetection() {
             ) {
                 ctx.beginPath();
 
-                ctx.moveTo(px, py);
+                if (px == 0 && py == 0) {
+                    ctx.moveTo(el.bbox[0] - 1, el.bbox[1] - 1);
+                } else {
+                    ctx.moveTo(px, py);
+                }
                 ctx.lineTo(el.bbox[0], el.bbox[1]);
 
                 ctx.stroke();

@@ -3,19 +3,73 @@
     <head>
         <meta charset="UTF-8" />
         <title>
-            Handtrack.js : A library for prototyping realtime handtracking in
-            the browser.
+            Handy
         </title>
         <link
             rel="stylesheet"
             href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"
         />
         <link rel="stylesheet" href="index.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Rubik:wght@300&display=swap"
+            rel="stylesheet">
     </head>
 
     <body class="bx--body p20">
-        <a href="./draw/draw.html">Draw</a>
-        <a href="./doctor/doctor.html">Doctor</a>
-        <a href="./pong/pong.html">Pong</a>
+        <h1> Handy </h1>
+        <h3>Play our games using your palm!</h3>
+
+        <div id="games">
+
+            <div class="game-link">
+                <div class="game-photos" id="draw"></div>
+                <div class="game-info">
+                    <a href="./draw/draw.html">
+                        <div class="game-name">
+                            <h4>Draw</h4>
+                            <p>In this game you have to remember popular brands logos and recreate them!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-link">
+                <div class="game-photos" id="doctor"></div>
+                <div class="game-info">
+                    <a href="./doctor/doctor.html">
+                        <div class="game-name">
+                            <h4>Doctor</h4>
+                            <p>In this game you have Sling Ring and you can recreate Dr. Strange's spells!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-link">
+                <div class="game-photos" id="pong"></div>
+                <div class="game-info">
+                    <a href="./pong/pong.html">
+                        <div class="game-name">
+                            <h4>Pong</h4>
+                            <p>In this game you mustn't let the ball pass near you!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-link">
+                <div class="game-photos" id="spaceship"></div>
+                <div class="game-info">
+                    <a href="./spaceship/spaceship.html">
+                        <div class="game-name">
+                            <h4>Spaceship</h4>
+                            <p>In this game you control the spaceship and have to protect it from asteroids</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

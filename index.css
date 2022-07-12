@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    padding-top: 10px;
+}
+
+#games {
+    width: 66vw;
+    height: 120vh;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#draw {
+    background-image: url('bgs/draw.jpg');
+    background-size: cover;
+    width: 26vw;
+    height: 20vh;
+    text-align: center;
+    border-radius: 3%;
+    padding: 15px;
+}
+
+.game-photos {
+    background-size: cover;
+    width: 26vw;
+    height: 20vh;
+    text-align: center;
+    border-radius: 3%;
+}
+
+#pong {
+    background-image: url('bgs/pong.jpg');
+    background-position:center;
+}
+
+#doctor {
+    background-image: url('bgs/doctor.png');
+}
+
+#spaceship {
+    background-image: url('bgs/spaceship.png');
+}
+
+.game-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 3%;
+    background-color: lightgray;  
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+    width: 30vw; 
+    transition: all ease-in-out 0.3s;
+    margin-top: 30px;
+}
+
+.game-link:hover{
+    transform: scale(1.05);
+}
+
+.game-name {
+    font-size:50px;
+    text-decoration: none;
+    color: black;
+    width: 26vw;
+    height: 20vh;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.game-info {
+    width: 26vw;
+    /* background-color: yellow; */
+}

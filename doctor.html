@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>
-            Handtrack.js : A library for prototyping realtime handtracking in
-            the browser.
-        </title>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"
-        />
-        <link rel="stylesheet" href="index.css" />
-    </head>
 
-    <body class="bx--body p20">
-        <a href="./index.html">Draw</a>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Doctor Strange
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+    <link rel="stylesheet" href="doctorStr.css" />
+</head>
+
+<body class="bx--body p20">
+    <div id="game">
+        <div>
+            <img id="doctorStrangeGif" src="./assets/strange.gif">
+        </div>
+
+        <div id="videoAndButton">
+            <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none"></video>
+            <canvas id="canvas" class="border canvasbox"></canvas>
+
+            <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
+                Toggle Video
+            </button>
+        </div>
+
+        <div class="doctorStrange">
+            <img id="doctorStrImage" src="./assets/Doctor_Strange.webp" alt="Girl in a jacket">
+            <canvas id="result" width="500" height="500"></canvas>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <script src="./doctorStr.js"></script>
+</body>
+
 </html>

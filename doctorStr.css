@@ -1,0 +1,66 @@
+body {
+    color: blue;
+}
+
+#game {
+    background-image: url('./assets/strangeBackground.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.canvasbox {
+    display: block;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom: 3px solid #0063ff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+    background: #333;
+}
+
+#videoAndButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 360px;
+}
+
+#trackbutton {
+    /* display: block; */
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#doctorStrange {
+    background-color: green;
+}
+
+#doctorStrImage {
+    width: 300px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+}
+
+#doctorStrangeGif {
+    height: 300px;
+    width: auto;
+}
+
+#result {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 152px;
+    top: 20%;
+}

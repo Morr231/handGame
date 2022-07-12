@@ -16,6 +16,11 @@ body {
     background: #333;
 }
 
+#result {
+    width: 450px;
+    height: 338px;
+}
+
 .mb10 {
     margin-bottom: 10px;
 }

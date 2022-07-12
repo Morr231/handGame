@@ -1,5 +1,43 @@
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
+
+const resultCanvas = document.getElementById("result");
+const ctx = resultCanvas.getContext("2d");
+
+ctx.strokeStyle = "BADA55";
+ctx.lineJoin = "round";
+ctx.lineCap = "round";
+ctx.lineWidth = 100;
+
+const draw = ({}) => {
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+    ctx.stroke();
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+
+    hue++;
+    if (hue >= 360) {
+        hue = 0;
+    }
+
+    if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        direction = !direction;
+    }
+    if (direction) {
+        ctx.lineWidth++;
+    } else {
+        ctx.lineWidth--;
+    }
+};
+
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+let hue = 0;
+let direction = true;
+
 const context = canvas.getContext("2d");
 let trackButton = document.getElementById("trackbutton");
 let updateNote = document.getElementById("updatenote");
@@ -45,6 +83,14 @@ function runDetection() {
 
         predictions.forEach((el) => {
             if (el.label === "open") {
+                ctx.beginPath();
+                // ctx.moveTo(el.bbox[0] - 1, el.bbox[1] - 1);
+                ctx.lineTo(el.bbox[0], el.bbox[1]);
+
+                ctx.stroke();
+                ctx.closePath();
+
+                // ctx.fillRect(el.bbox[0], el.bbox[1], 5, 5);
                 console.log(el.bbox);
             }
         });

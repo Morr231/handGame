@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Spaceship
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+    <link rel="stylesheet" href="spaceship.css" />
+</head>
+
+<body class="bx--body p20">
+    <div id="game">
+        <div id="topBar">
+            <div id="videoAndButton">
+                <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
+                    Toggle Video
+                </button>
+
+                <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none"></video>
+                <canvas id="canvas" class="border canvasbox"></canvas>
+            </div>
+
+        </div>
+
+        <div id="gameZone">
+            <div class="end-game" id="gameOver">Game Over</div>
+            <img id="spaceship" src="./assets/spaceship.png" style="left: auto;">
+            <!-- <canvas id="result" width="500" height="500"></canvas> -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <script src="./spaceship.js"></script>
+</body>
+
+</html>

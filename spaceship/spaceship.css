@@ -1,0 +1,94 @@
+body {
+    color: blue;
+}
+
+#game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: darkgreen;
+    background-image: url('./assets/spaceBG.jpg');
+    background-size: contain;
+}
+
+#topBar {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 16vh;
+    padding: 10px;
+}
+
+.canvasbox {
+    display: block;
+    border-radius: 3px;
+    width: 10vw;
+    height: 15vh;
+    margin-left: 100px;
+    border-bottom: 3px solid #0063ff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+    background: #333;
+    /* border: 2px red ridge; */
+}
+
+#time {
+    margin-right: 100px;
+}
+
+#videoAndButton {
+    /* border: 2px black ridge; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    height: 15vh;
+}
+
+#trackbutton {
+    /* display: block; */
+    /* margin-top: 10px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gameZone {
+    /* border: 1px white dotted; */
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+}
+
+#spaceship {
+    position: absolute;
+    /* border: 1px gray solid; */
+    width: 8vw;
+    height: auto;
+    bottom: 10vh;
+}
+
+.asteroid {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    overflow:hidden;
+}
+
+#gameOver {
+    display: none;
+    font-size: 92px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 25vw;
+    /* border: 2px red ridge; */
+}

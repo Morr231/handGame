@@ -5,7 +5,6 @@ body {
 #game {
     background-image: url('./bg/circus.jpg');
     background-position: bottom;
-    background-color: violet;
     background-size: contain;
     height: 100vh;
     width: 100vw;
@@ -29,8 +28,6 @@ body {
 }
 
 #videoAndButton {
-    background-color: red;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +49,6 @@ body {
     height: 50vh;
     right: 10vw;
     top: 44vh;
-    border: 2px blue solid;
 }
 
 #artists-collection {
@@ -61,14 +57,13 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 80vw;
-    background-color: white;
 }
 
 .artist {
     width: auto;
     height: 50vh;
     bottom: 0;
-    border: 1px solid pink
+    border: 1px solid hsla(192, 15%, 94%, 0.2);
 }
 
 .disabled {

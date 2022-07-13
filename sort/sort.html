@@ -8,7 +8,7 @@
             href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"
         />
         <link rel="stylesheet" href="../draw/draw.css" />
-        <link rel="stylesheet" href="./pong.css" />
+        <link rel="stylesheet" href="./sort.css" />
     </head>
 
     <body class="bx--body p20" style="overflow: hidden">
@@ -30,9 +30,48 @@
         ></video>
 
         <canvas id="canvas" class="border canvasbox"></canvas>
+        <div class="trash-container">
+            <div class="trash-container__el" id="trash-container-1">
+                <div class="trash-container__el_name">Plastic</div>
+                <img
+                    src="./sort-img/trash-can.png"
+                    alt=""
+                    id="plastic"
+                    class="trash-container__el_img"
+                />
+            </div>
+
+            <div class="trash-container__el" id="trash-container-2">
+                <div class="trash-container__el_name">Glass</div>
+                <img
+                    src="./sort-img/trash-can.png"
+                    alt=""
+                    id="glass"
+                    class="trash-container__el_img"
+                />
+            </div>
+
+            <div class="trash-container__el" id="trash-container-3">
+                <div class="trash-container__el_name">Paper</div>
+                <img
+                    src="./sort-img/trash-can.png"
+                    alt=""
+                    id="paper"
+                    class="trash-container__el_img"
+                />
+            </div>
+        </div>
+
+        <div class="trash-images">
+            <img src="" alt="" id="trash-1" class="trash-images__el_img" />
+            <img src="" alt="" id="trash-2" class="trash-images__el_img" />
+            <img src="" alt="" id="trash-3" class="trash-images__el_img" />
+        </div>
+
+        <img src="" alt="" class="cursor" id="cursor" />
 
         <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
-        <script src="./pong.js"></script>
+        <script src="./sort.js"></script>
     </body>
 </html>

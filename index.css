@@ -6,12 +6,12 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bolder;
 }
 
 h3 {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     padding-top: 10px;
 }
 
@@ -27,12 +27,12 @@ h3 {
 }
 
 #draw {
-    background-image: url('bgs/draw.jpg');
+    background-image: url("bgs/draw.jpg");
     background-size: cover;
 }
 
 #orchestra {
-    background-image: url('./bgs/orchestra.jpg');
+    background-image: url("./bgs/orchestra.jpg");
     background-position: center;
 }
 
@@ -45,17 +45,23 @@ h3 {
 }
 
 #pong {
-    background-image: url('bgs/pong.jpg');
-    background-position:center;
+    background-image: url("bgs/pong.jpg");
+    background-position: center;
 }
 
 #doctor {
-    background-image: url('bgs/doctor.png');
+    background-image: url("bgs/doctor.png");
     background-position: center;
 }
 
 #spaceship {
-    background-image: url('bgs/spaceship.png');
+    background-image: url("bgs/spaceship.png");
+}
+
+#trash {
+    background-image: url("bgs/trash.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .game-link {
@@ -64,19 +70,21 @@ h3 {
     align-items: center;
     justify-content: space-evenly;
     border-radius: 3%;
-    background-color: lightgray;  
+    background-color: lightgray;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
-    width: 30vw; 
+    width: 30vw;
     transition: all ease-in-out 0.3s;
     margin-top: 30px;
+
+    height: 60vh;
 }
 
-.game-link:hover{
+.game-link:hover {
     transform: scale(1.05);
 }
 
 .game-name {
-    font-size:50px;
+    font-size: 50px;
     text-decoration: none;
     color: black;
     width: 26vw;
@@ -86,6 +94,7 @@ h3 {
 
 a {
     text-decoration: none;
+    height: 60vh;
 }
 
 h4 {

@@ -1,0 +1,80 @@
+body {
+    color: blue;
+}
+
+#game {
+    background-image: url('./bg/circus.jpg');
+    background-position: bottom;
+    background-color: violet;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.canvasbox {
+    display: block;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding-top: 20px;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    border-bottom: 3px solid #0063ff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+    background: #333;
+}
+
+#videoAndButton {
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 260px;
+}
+
+#trackbutton {
+    /* display: block; */
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#result {
+    position: absolute;
+    width: 80vw;
+    height: 50vh;
+    right: 10vw;
+    top: 44vh;
+    border: 2px blue solid;
+}
+
+#artists-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    background-color: white;
+}
+
+.artist {
+    width: auto;
+    height: 50vh;
+    bottom: 0;
+    border: 1px solid pink
+}
+
+.disabled {
+    display: none;
+}
+
+.enabled {
+    display: block;
+}

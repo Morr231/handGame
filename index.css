@@ -17,7 +17,7 @@ h3 {
 
 #games {
     width: 66vw;
-    height: 120vh;
+    height: 200vh;
     padding: 10px;
     margin: 20px;
     display: flex;
@@ -29,6 +29,11 @@ h3 {
 #draw {
     background-image: url('bgs/draw.jpg');
     background-size: cover;
+}
+
+#orchestra {
+    background-image: url('./bgs/orchestra.jpg');
+    background-position: center;
 }
 
 .game-photos {
@@ -46,6 +51,7 @@ h3 {
 
 #doctor {
     background-image: url('bgs/doctor.png');
+    background-position: center;
 }
 
 #spaceship {

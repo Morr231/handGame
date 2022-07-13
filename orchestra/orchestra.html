@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Orchestra
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+    <link rel="stylesheet" href="./orchestra.css" />
+</head>
+
+<body class="bx--body p20">
+    <div id="game">
+
+        <div id="videoAndButton">
+            <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none"></video>
+            <canvas id="canvas" class="border canvasbox"></canvas>
+
+            <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
+                Toggle Video
+            </button>
+        </div>
+
+        <div id="artists-collection">
+            <img class="artist" id="imanbek" src="./artists/imanbek.png">
+            <!-- <audio autoplay>
+                <source src="./songs/imanbek.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio> -->
+
+            <img class="artist" id="roza" src="./artists/roza.png">
+            <!-- <audio autoplay>
+                <source src="./songs/roza.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio> -->
+
+            <img class="artist" id="sailaubek" src="./artists/sailaubek.png">
+            <!-- <audio autoplay>
+                <source src="./songs/sailaubek.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio> -->
+        </div>
+
+        <div class="doctorStrange">
+            <canvas id="result" width="500" height="500"></canvas>
+            <img style="position: absolute;" width="25vw" id="open-cursor" src="./cursor/open.png" class="disabled">
+            <img style="position: absolute;" width="25vw" id="close-cursor" src="./cursor/close.png" class="disabled">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <script src="./orchestra.js"></script>
+</body>
+
+</html>

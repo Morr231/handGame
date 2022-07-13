@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: darkgreen;
-    background-image: url('./assets/spaceBG.jpg');
+    background-image: url("./assets/spaceBG.jpg");
     background-size: contain;
 }
 
@@ -30,7 +30,7 @@ body {
     border-radius: 3px;
     width: 10vw;
     height: 15vh;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     border-bottom: 3px solid #0063ff;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
     background: #333;
@@ -78,7 +78,6 @@ body {
     position: absolute;
     width: 60px;
     height: 60px;
-    overflow:hidden;
 }
 
 #gameOver {
@@ -91,4 +90,11 @@ body {
     top: 50%;
     left: 25vw;
     /* border: 2px red ridge; */
+}
+
+.bullet {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
 }

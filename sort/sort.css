@@ -42,8 +42,8 @@
 
 .trash-images__el_img {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     top: 0;
 }
 

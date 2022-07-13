@@ -125,24 +125,36 @@ function runDetection() {
                         cursor.getBoundingClientRect()
                     )
                 ) {
-                    trashImg[0].img.style.left = cursor.style.left;
-                    trashImg[0].img.style.top = cursor.style.top;
+                    trashImg[0].img.style.left = `${
+                        parseInt(cursor.style.left.split("p")[0]) - 150
+                    }px`;
+                    trashImg[0].img.style.top = `${parseInt(
+                        cursor.style.top.split("p")[0]
+                    )}px`;
                 } else if (
                     isCollide(
                         trashImg[1].img.getBoundingClientRect(),
                         cursor.getBoundingClientRect()
                     )
                 ) {
-                    trashImg[1].img.style.left = cursor.style.left;
-                    trashImg[1].img.style.top = cursor.style.top;
+                    trashImg[1].img.style.left = `${
+                        parseInt(cursor.style.left.split("p")[0]) - 150
+                    }px`;
+                    trashImg[1].img.style.top = `${parseInt(
+                        cursor.style.top.split("p")[0]
+                    )}px`;
                 } else if (
                     isCollide(
                         trashImg[2].img.getBoundingClientRect(),
                         cursor.getBoundingClientRect()
                     )
                 ) {
-                    trashImg[2].img.style.left = cursor.style.left;
-                    trashImg[2].img.style.top = cursor.style.top;
+                    trashImg[2].img.style.left = `${
+                        parseInt(cursor.style.left.split("p")[0]) - 150
+                    }px`;
+                    trashImg[2].img.style.top = `${parseInt(
+                        cursor.style.top.split("p")[0]
+                    )}px`;
                 }
 
                 trashImg.forEach((el) => {

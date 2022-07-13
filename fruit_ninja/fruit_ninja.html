@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Handy</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"
+        />
+        <link rel="stylesheet" href="../draw/draw.css" />
+        <link rel="stylesheet" href="./sort.css" />
+    </head>
+
+    <body class="bx--body p20" style="overflow: hidden">
+        <div class="mb10">
+            <button
+                onclick="toggleVideo()"
+                id="trackbutton"
+                class="bx--btn bx--btn--secondary"
+                type="button"
+            >
+                Toggle Video
+            </button>
+        </div>
+        <video
+            class="videobox canvasbox"
+            autoplay="autoplay"
+            id="myvideo"
+            style="display: none"
+        ></video>
+
+        <canvas id="canvas" class="border canvasbox"></canvas>
+
+        <img src="" alt="" class="cursor" id="cursor" />
+
+        <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+        <script src="./sort.js"></script>
+    </body>
+</html>
